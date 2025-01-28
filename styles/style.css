@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #22d4fd;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #f6f6f6;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Montserrat", serif;
+    --fonte-secundaria: "Krona One", serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.conteudo__cabecalho {
+    display: flex;
+    gap: 80px; 
+}
+
+.texto__cabecalho {
+     font-family: var(--fonte-primaria);
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: var(--cor-primaria);
+     text-decoration: none;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    box-sizing: border-box;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+    gap: 80px;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.25rem;
+    color: var(--cor-terciaria);
+}
+
+.parte__titulo {
+    color: var(--cor-primaria);
+}
+
+.apresentacao__paragrafo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apresentacao__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.titulo__links {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.titulo__links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    width: 50%;
+    padding: 16px 0;
+}
+
+.titulo__links__link:hover {
+    background-color: var(--cor-hover);
+
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape__paragrafo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 24px;    
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .conteudo__cabecalho {
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+    
+}
+
+
